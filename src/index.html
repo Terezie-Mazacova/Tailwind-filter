@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./output.css">
+    <title>Filter</title>
+</head>
+<body>
+    <section class="flex justify-center items-center h-screen bg-cool-steel font-inter">
+        <div class="w-[364px] p-[52px] rounded-lg bg-white">
+            <div class="relative mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-[-40px] right-[-40px] h-6 w-6 text-deep-navy opacity-40">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+                
+                <div class="flex p-4 gap-2.5  border-2 border-cool-steel rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-deep-navy">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <p class="text-deep-navy text-base">Add an industry</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 pl-4 mb-6">
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="agriculture" id="agriculture" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="agriculture" class="text-deep-navy text-base">Agriculture</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="transport" id="transport" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="transport" class="text-deep-navy text-base">Air Transport</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="services" id="services" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="services" class="text-deep-navy text-base">Business Services</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="construction" id="construction" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="construction" class="text-deep-navy text-base">Construction</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="dairy" id="dairy" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="dairy" class="text-deep-navy text-base">Dairy</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="education" id="education" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="education" class="text-deep-navy text-base">Education</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" name="health" id="health" class="w-5 h-5  border border-steel-blue checked:border-steel-blue accent-deep-navy">
+                    <label for="health" class="text-deep-navy text-base">Health</label>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-[6px] border-t-2 border-cool-steel">
+                <button class="w-[127px] h-[51px] mt-6 rounded-lg text-base text-deep-navy hover:bg-deep-navy hover:text-white">Reset</button>
+
+                <button class="w-[127px] h-[51px] mt-6 rounded-lg text-base bg-deep-navy text-white hover:bg-white hover:border hover:border-deep-navy hover:text-deep-navy">Show results</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
